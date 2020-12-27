@@ -203,6 +203,9 @@ Movies
 .movie {
   position: relative;
   overflow: hidden;
+  transition: var(--transition);
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
 }
 .movie img {
   width: 100%;
@@ -227,6 +230,10 @@ Movies
 .movie-info p {
   margin-bottom: 0;
   color: var(--clr-white);
+}
+
+.movie:hover{
+  transform: scale(1.05);
 }
 .movie:hover .movie-info {
   transform: translateY(0);
